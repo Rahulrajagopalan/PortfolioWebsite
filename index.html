@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0cf72ae317.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Rahul R</h1>
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>                    
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()" id="menuBar"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hai I'm <span>Rahul</span><br>Welcome to my<br>Creative corner!</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------About------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.jpg" alt="about-photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>With a background in Mechanical Engineering and Sales, I've transitioned into the world of Software Development. 
+                        My journey in this field began with learning the basics of programming, and I've been fascinated by its endless possibilities ever since.
+
+                        Combining my engineering background with newfound programming skills, I'm committed to delivering robust software solutions that cater to real-world challenges. 
+                        I'm an enthusiastic learner, always seeking to expand my knowledge and skill set to excel in this dynamic industry.</p>
+
+                        <div class="tab-tiltles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web application development</li>
+                                <li><span>App Development</span><br>Android application development</li>
+                                <li><span>Data Analytics</span><br>Analyze data to derive insights</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Online Resources</span><br>Self made Projects</li>
+                                <li><span>WYND Technologies</span><br>Software Developor Trainee</li>
+                                <li><span>Trycle</span><br>Data Analytics Intern</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bachelor of Technology</span><br>Mechanical Engineer</li>
+                                <li><span>Certification</span><br>Machine Learning and Data Science</li>
+                                <li><span>Certification</span><br>Postgre SQL</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------Services--------------------------->
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">My Services</div>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ut neque ligula, molestie nec nunc ut, pretium luctus ex. 
+                        Etiam vitae nulla ut tortor tincidunt suscipit.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ut neque ligula, molestie nec nunc ut, pretium luctus ex. 
+                        Etiam vitae nulla ut tortor tincidunt suscipit.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ut neque ligula, molestie nec nunc ut, pretium luctus ex. 
+                        Etiam vitae nulla ut tortor tincidunt suscipit.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------Portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Works</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Angular.png" alt="work1">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Website the uses angular to build an E-Commmerce website</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Flutter.png" alt="work2">
+                    <div class="layer">
+                        <h3>Flutter features</h3>
+                        <p>Application features that are relevant for better user experience</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Python.png" alt="work3">
+                    <div class="layer">
+                        <h3>Home price prediction</h3>
+                        <p>Created Model for Banglore home price prediction using data available</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rahulrgopal246@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9446388675</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="RAHUL R.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email Id" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabName){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+
+    }
+    ////////////////////////////
+
+    var sideMenu = document.getElementById("sideMenu");
+
+    function openMenu(){
+        sideMenu.style.right = "0";
+        menuBar.style.opacity = "0";
+    }
+    function closeMenu(){
+        sideMenu.style.right = "-200px";
+        menuBar.style.opacity = "1";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwcUedtZResHg4GL954ExN8lhoar5KJe83orQjdHwfFkerPDBVgr8XAKr-NGvTzJs405A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfullly"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
